@@ -1,0 +1,7 @@
+{
+    "IsProduction" : true , 
+    "WorkSpace" : "/Volumes/64G/Temp/new_comic",
+    "BookBasisInfoFile" : "book.json",
+    "HistroyInfoFile" : "history.txt",
+    "PackageDirectoryName" : "package"
+}

@@ -1,0 +1,33 @@
+{
+    "Symbos" : [
+        {
+            "Alias" : "PackageTextSymbos" ,
+            "InputSymbos" : ["卷","單行本"],
+            "OutputSymbo" : "P"
+        }, 
+        {
+            "Alias" : "ChapterTextSymbos" ,
+            "InputSymbos" : ["集","話"] ,
+            "OutputSymbo" : "C"
+        },
+        {
+            "Alias" : "ExtraTextSymbos" ,
+            "InputSymbos" : ["附录","總集篇","特別篇","番外篇","短篇集","外傳"] ,
+            "OutputSymbo" : "E"
+        }
+    ] , 
+    "FileSuffix" : [
+        {
+            "InputSymbos" : ["JPG","jpg","jpeg"],
+            "OutputSymbo" : "jpg"
+        },
+        {
+            "InputSymbos" : ["PNG","png"],
+            "OutputSymbo" : "png"
+        },
+        {
+            "InputSymbos" : ["gif","GIF"],
+            "OutputSymbo" : "gif"
+        }
+    ]
+}
