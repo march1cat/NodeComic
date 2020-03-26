@@ -8,11 +8,12 @@ class PDF extends Basis {
 
     doc = null;
     nowPage = null; // PDF Document , virtual page opertion
+    pageOption = { layout: 'landscape'}
 
     constructor(uri){
         super();
         const fileTool = new FileTool();
-        this.doc = new PDFDocument;
+        this.doc = new PDFDocument( this.pageOption );
         this.doc.pipe(fileTool.createOutputStream(uri));
         this.nowPage = new Page(this.doc);
         this.setFontSize();
@@ -27,7 +28,8 @@ class PDF extends Basis {
     }
 
     newPage(){
-        const page = new Page(this.doc.addPage());
+        
+        const page = new Page(this.doc.addPage(this.pageOption));
         this.nowPage = page;
         return page;
         //this.doc.addPage().text('Here is some vector graphics...', 100, 100)

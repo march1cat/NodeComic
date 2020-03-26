@@ -14,7 +14,7 @@ class Page {
     }
 
     addImage(imgPath){
-        this.page.image(imgPath , 0 , 0 , { scale : 0.7 });
+        this.page.image(imgPath , 0 , 0 , { fit : [792 , 612] });
     }
 
 }

@@ -48,7 +48,7 @@ class PackerMain extends ApplicationMain {
         this.log("PackagedChapters = " , packagedChapters);
         for(var i in packagedChapters){
             const imageAr = [];
-            const chapter = singleChapters[i];
+            const chapter = packagedChapters[i];
             const chapterDirectory = new EcDirectory(this.book_workspace.Uri() + chapter.folderName);
             const images = chapterDirectory.viewFiles().sort(
                 ( item1 , item2) => {
